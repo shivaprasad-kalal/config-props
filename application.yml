@@ -1,0 +1,26 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+ 
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'
+        
+spring:    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+    show-sql: true        
+        
+couponService:
+  url: http://localhost:9091/couponapi/coupon/
