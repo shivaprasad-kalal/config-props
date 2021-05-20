@@ -24,3 +24,8 @@ spring:
         
 couponService:
   url: http://localhost:9091/couponapi/coupon/
+microservice:
+  payment-service:
+    endpoints:
+      endpoint:
+        uri: http://PAYMENT-SERVICE/payment/doPayment
