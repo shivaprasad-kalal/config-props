@@ -22,8 +22,6 @@ spring:
         format_sql: true
     show-sql: true        
         
-couponService:
-  url: http://localhost:9091/couponapi/coupon/
 microservice:
   payment-service:
     endpoints:
