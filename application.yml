@@ -27,7 +27,7 @@ microservice:
     endpoints:
       endpoint:
         uri: http://PAYMENT-SERVICE/payment/doPayment
-spring:       
+       
   boot:
     admin:
       client:
